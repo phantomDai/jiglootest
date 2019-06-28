@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="EclipseModuleManager">
+    <libelement value="file://E:/Workspaces/jiglootest/lib/AbsoluteLayout.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/activation-1.1.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/ant-1.6.5.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/automaton.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/axis2-1.4.1.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/bcprov-jdk15-144.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/binding-2.0.1.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/cajo-1.142.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/commons-beanutils-1.7.0.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/commons-cli-1.0.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/commons-codec-1.3.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/commons-collections-3.2.1.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/commons-httpclient-3.1.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/commons-io-1.3.2.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/commons-lang-2.4.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/commons-logging-1.1.1.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/cssparser-0.9.5.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/engine-gecko-2.8.28035.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/engine-ie-2.8.28035.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/engine-webkit-2.8.28035.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/ext-xmlbeans-1.2.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/ezmorph-1.0.5.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/flex-messaging-common-1.0.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/flex-messaging-core-1.0.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/flex-messaging-opt-1.0.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/flex-messaging-proxy-1.0.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/flex-messaging-remoting-1.0.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/forms-1.0.7.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/hermes-1.14.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/htmlunit-2.7.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/htmlunit-core-js-2.7.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/j2ee-xmlbeans-1.4.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/javamail-1.4.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/jep-2.4.1.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/jetty-6.1.26.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/jetty-util-6.1.26.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/jms-1.1.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/js-1.7R2.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/json-lib-2.2.2-jdk15.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/jsr173_1.0_api-xmlbeans-2.4.0.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/jtidy-r872-jdk15.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/junit-4.4.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/jxbrowser-2.8.28035.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/l2fprod-common-directorychooser-7.3.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/l2fprod-common-fontchooser-7.3.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/log4j-1.2.14.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/looks-2.2.0.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/MozillaGlue-2.8.28035.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/MozillaInterfaces-2.8.28035.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/mysql-connector-java-5.1.12-bin.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/nekohtml-1.9.14.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/not-yet-commons-ssl-0.3.11.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/opensaml-1.1.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/policy-xmlbeans-1.5.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/rsyntaxtextarea-1.3.4.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/sac-1.3.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/saxon-dom-9.1.0.8j.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/serializer-2.7.1.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/servlet-api-2.5-20081211.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/slf4j-api-1.5.8.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/slf4j-log4j12-1.5.8.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/soapui-4.0.1.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/soapui-xmlbeans-4.0.1.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/soap-xmlbeans-1.2.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/swing-layout-1.0.3.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/swingx-soapui.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/tuxpack-0.2.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/wadl-xmlbeans-1.1.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/winpack-3.8.2.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/woden-ant-1.0M9.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/woden-api-1.0M9.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/woden-impl-commons-1.0M9.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/woden-impl-dom-1.0M9.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/woden-qname-1.0M9.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/woden-tool-1.0M9.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/wsdl4j-1.6.2-fixed.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/wsdl4j-src-1.6.2.zip" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/wss4j-1.5.8.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/xalan-2.7.1.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/xbean_xpath-2.4.0.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/xbean-fixed-2.4.0.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/xeger-1.0-SNAPSHOT.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/xercesImpl-2.9.1.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/xml-apis-2.9.1.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/xmlpublic-2.4.0.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/XmlSchema-1.4.7.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/xmlsec-1.4.3.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/xmlunit-1.2.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/xom-1.1.jar" />
+    <libelement value="file://E:/Workspaces/jiglootest/lib/xstream-1.3.1.jar" />
+    <libelement value="jar://$MODULE_DIR$/lib/dom4j-1.6.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/jaxen-1.1.1.jar!/" />
+    <src_description expected_position="0">
+      <src_folder value="file://$MODULE_DIR$/src" expected_position="0" />
+    </src_description>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/bin" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="module-library">
+      <library name="dom4j-1.6.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/dom4j-1.6.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jaxen-1.1.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/jaxen-1.1.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/AbsoluteLayout.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/activation-1.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ant-1.6.5.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/automaton.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/axis2-1.4.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/bcprov-jdk15-144.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/binding-2.0.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/cajo-1.142.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/commons-beanutils-1.7.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/commons-cli-1.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/commons-codec-1.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/commons-collections-3.2.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/commons-httpclient-3.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/commons-io-1.3.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/commons-lang-2.4.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/commons-logging-1.1.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/cssparser-0.9.5.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/engine-gecko-2.8.28035.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/engine-ie-2.8.28035.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/engine-webkit-2.8.28035.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ext-xmlbeans-1.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/ezmorph-1.0.5.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/flex-messaging-common-1.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/flex-messaging-core-1.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/flex-messaging-opt-1.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/flex-messaging-proxy-1.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/flex-messaging-remoting-1.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/forms-1.0.7.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/hermes-1.14.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/htmlunit-2.7.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/htmlunit-core-js-2.7.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/j2ee-xmlbeans-1.4.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/javamail-1.4.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/jep-2.4.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/jetty-6.1.26.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/jetty-util-6.1.26.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/jms-1.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/js-1.7R2.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/json-lib-2.2.2-jdk15.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/jsr173_1.0_api-xmlbeans-2.4.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/jtidy-r872-jdk15.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/junit-4.4.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/jxbrowser-2.8.28035.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/l2fprod-common-directorychooser-7.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/l2fprod-common-fontchooser-7.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/log4j-1.2.14.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/looks-2.2.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/MozillaGlue-2.8.28035.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/MozillaInterfaces-2.8.28035.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/mysql-connector-java-5.1.12-bin.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/nekohtml-1.9.14.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/not-yet-commons-ssl-0.3.11.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/opensaml-1.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/policy-xmlbeans-1.5.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/rsyntaxtextarea-1.3.4.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/sac-1.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/saxon-dom-9.1.0.8j.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/serializer-2.7.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/servlet-api-2.5-20081211.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/slf4j-api-1.5.8.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/slf4j-log4j12-1.5.8.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/soap-xmlbeans-1.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/soapui-4.0.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/soapui-xmlbeans-4.0.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/swing-layout-1.0.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/swingx-soapui.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/tuxpack-0.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/wadl-xmlbeans-1.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/winpack-3.8.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/woden-ant-1.0M9.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/woden-api-1.0M9.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/woden-impl-commons-1.0M9.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/woden-impl-dom-1.0M9.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/woden-qname-1.0M9.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/woden-tool-1.0M9.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/wsdl4j-1.6.2-fixed.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/wss4j-1.5.8.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/xalan-2.7.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/xbean-fixed-2.4.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/xbean_xpath-2.4.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/xeger-1.0-SNAPSHOT.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/xercesImpl-2.9.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/xml-apis-2.9.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/xmlpublic-2.4.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/XmlSchema-1.4.7.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/xmlsec-1.4.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/xmlunit-1.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/xom-1.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/xstream-1.3.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/lib/wsdl4j-src-1.6.2.zip!/wsdl4j-1_6_2/src" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+  </component>
+</module>

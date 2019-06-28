@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testset>
+	<testcase id="1">
+		<accountFrom>10000000000</accountFrom>
+		<accountTo>1234567890</accountTo>
+		<mode>2</mode>
+		<amount>2000.0</amount>
+	</testcase>
+	<testcase id="2">
+		<accountFrom>30000000000</accountFrom>
+		<accountTo>20000000000</accountTo>
+		<mode>0</mode>
+		<amount>64300.0</amount>
+	</testcase>
+</testset>

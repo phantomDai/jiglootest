@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="ATMService" targetNamespace="http://www.example.org/ATMService/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://www.example.org/ATMService/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.example.org/ATMService/">
+			<xsd:element name="loginRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="accountID" type="xsd:string"/>
+						<xsd:element name="password" type="xsd:string"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="loginResponse" type="xsd:string">
+
+			</xsd:element>
+			<xsd:element name="withdrawRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="accountID" type="xsd:string"/>
+						<xsd:element name="amount" type="xsd:int"/>
+
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="withdrawResponse" type="xsd:string"/>
+			<xsd:element name="depositRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="accountID" type="xsd:string"/>
+						<xsd:element name="amount" type="xsd:int"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="depositResponse" type="xsd:string"/>
+			<xsd:element name="transferRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element maxOccurs="1" minOccurs="1" name="accountFrom" type="tns:accountNumber">
+						</xsd:element>
+						<xsd:element maxOccurs="1" minOccurs="1" name="accountTo" type="tns:accountNumber"/>
+						<xsd:element name="mode" type="tns:modeType">
+
+						</xsd:element>
+						<xsd:element name="amount" type="tns:amountType">
+						</xsd:element>
+
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="transferResponse" type="tns:balance"/>
+			<xsd:element name="queryBalanceRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="accountID" type="xsd:string"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="queryBalanceResponse" type="xsd:string"/>
+			<xsd:element name="changePasswordRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="accountID" type="xsd:string">
+						</xsd:element>
+						<xsd:element name="password_old" type="xsd:string">
+						</xsd:element>
+						<xsd:element name="password_new" type="xsd:string">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="changePasswordResponse" type="xsd:string"/>
+			<xsd:element name="insertAccountRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+
+
+
+
+
+
+						<xsd:element name="account" type="tns:account">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="insertAccountResponse" type="xsd:string"/>
+			<xsd:element name="deleteAccountRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="accountID" type="xsd:string"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="deleteAccountResponse" type="xsd:string"/>
+			<xsd:element name="queryAccountRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="accountID" type="xsd:string"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="queryAccountResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="account" type="tns:account">
+
+						</xsd:element>
+						<xsd:element name="info" type="xsd:string">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="invalidAccountID0" type="xsd:string"/>
+			<xsd:element name="invalidPassword0" type="xsd:string"/>
+			<xsd:element name="invalidAmount0" type="xsd:string"/>
+			<xsd:complexType name="account">
+				<xsd:attribute name="accountID" type="xsd:string"/>
+				<xsd:attribute name="password" type="xsd:string"/>
+				<xsd:attribute name="balance" type="xsd:double"/>
+				<xsd:attribute name="userID" type="xsd:string"/>
+				<xsd:attribute name="bank" type="xsd:string"/>
+				<xsd:attribute name="branch" type="xsd:string"/>
+			</xsd:complexType>
+
+			<xsd:complexType name="balance">
+				<xsd:sequence>
+					<xsd:element name="balanceDeltaFrom" type="xsd:double"/>
+					<xsd:element name="balanceDeltaTo" type="xsd:double"/>
+				</xsd:sequence>
+			</xsd:complexType>
+		
+			<xsd:simpleType name="accountNumber">
+				<xsd:restriction base="xsd:string">
+
+					<xsd:length value="10"/>
+					<xsd:pattern value="[0-9]{10}"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+		
+			<xsd:simpleType name="modeType">
+				<xsd:restriction base="xsd:int">
+
+					<xsd:minInclusive value="0"/>
+
+					<xsd:maxInclusive value="3"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+
+			<xsd:simpleType name="amountType">
+				<xsd:restriction base="xsd:int">
+					<xsd:minInclusive value="100"/>
+					<xsd:maxInclusive value="5000"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="loginResponse">
+    <wsdl:part name="parameters" element="tns:loginResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteAccountRequest">
+    <wsdl:part name="parameters" element="tns:deleteAccountRequest">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="queryAccountResponse">
+    <wsdl:part name="parameters" element="tns:queryAccountResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="InvalidAccountID">
+    <wsdl:part name="parameters" element="tns:invalidAccountID0">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="InvalidAmount">
+    <wsdl:part name="parameters" element="tns:invalidAmount0">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="InvalidPassword">
+    <wsdl:part name="parameters" element="tns:invalidPassword0">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="transferRequest">
+    <wsdl:part name="parameters" element="tns:transferRequest">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteAccountResponse">
+    <wsdl:part name="parameters" element="tns:deleteAccountResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="depositResponse">
+    <wsdl:part name="parameters" element="tns:depositResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="queryBalanceRequest">
+    <wsdl:part name="parameters" element="tns:queryBalanceRequest">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="queryBalanceResponse">
+    <wsdl:part name="parameters" element="tns:queryBalanceResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="insertAccountRequest">
+    <wsdl:part name="parameters" element="tns:insertAccountRequest">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="loginRequest">
+    <wsdl:part name="parameters" element="tns:loginRequest">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="insertAccountResponse">
+    <wsdl:part name="parameters" element="tns:insertAccountResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="queryAccountRequest">
+    <wsdl:part name="parameters" element="tns:queryAccountRequest">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="withdrawRequest">
+    <wsdl:part name="parameters" element="tns:withdrawRequest">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="transferResponse">
+    <wsdl:part name="parameters" element="tns:transferResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="withdrawResponse">
+    <wsdl:part name="parameters" element="tns:withdrawResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="depositRequest">
+    <wsdl:part name="parameters" element="tns:depositRequest">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="changePasswordRequest">
+    <wsdl:part name="parameters" element="tns:changePasswordRequest">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="changePasswordResponse">
+    <wsdl:part name="parameters" element="tns:changePasswordResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="ATMService">
+    <wsdl:operation name="login">
+      <wsdl:input message="tns:loginRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:loginResponse">
+    </wsdl:output>
+      <wsdl:fault name="fault01" message="tns:InvalidAccountID">
+    </wsdl:fault>
+      <wsdl:fault name="fault02" message="tns:InvalidPassword">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="withdraw">
+      <wsdl:input message="tns:withdrawRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:withdrawResponse">
+    </wsdl:output>
+      <wsdl:fault name="fault03" message="tns:InvalidAmount">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="deposit">
+      <wsdl:input message="tns:depositRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:depositResponse">
+    </wsdl:output>
+      <wsdl:fault name="fault03" message="tns:InvalidAmount">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="transfer">
+      <wsdl:input message="tns:transferRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:transferResponse">
+    </wsdl:output>
+      <wsdl:fault name="fault01" message="tns:InvalidAccountID">
+    </wsdl:fault>
+      <wsdl:fault name="fault03" message="tns:InvalidAmount">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="queryBalance">
+      <wsdl:input message="tns:queryBalanceRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:queryBalanceResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="changePassword">
+      <wsdl:input message="tns:changePasswordRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:changePasswordResponse">
+    </wsdl:output>
+      <wsdl:fault name="fault02" message="tns:InvalidPassword">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="insertAccount">
+      <wsdl:input message="tns:insertAccountRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:insertAccountResponse">
+    </wsdl:output>
+      <wsdl:fault name="fault01" message="tns:InvalidAccountID">
+    </wsdl:fault>
+      <wsdl:fault name="fault02" message="tns:InvalidPassword">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="deleteAccount">
+      <wsdl:input message="tns:deleteAccountRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:deleteAccountResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="queryAccount">
+      <wsdl:input message="tns:queryAccountRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:queryAccountResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ATMServiceSOAP" type="tns:ATMService">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="login">
+      <soap:operation soapAction="http://www.example.org/ATMService/login"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="fault01">
+        <soap:fault name="fault01" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="fault02">
+        <soap:fault name="fault02" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="withdraw">
+      <soap:operation soapAction="http://www.example.org/ATMService/withdraw"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="fault03">
+        <soap:fault name="fault03" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="deposit">
+      <soap:operation soapAction="http://www.example.org/ATMService/deposit"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="fault03">
+        <soap:fault name="fault03" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="transfer">
+      <soap:operation soapAction="http://www.example.org/ATMService/transfer"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="fault01">
+        <soap:fault name="fault01" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="fault03">
+        <soap:fault name="fault03" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="queryBalance">
+      <soap:operation soapAction="http://www.example.org/ATMService/queryBalance"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="changePassword">
+      <soap:operation soapAction="http://www.example.org/ATMService/changePassword"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="fault02">
+        <soap:fault name="fault02" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="insertAccount">
+      <soap:operation soapAction="http://www.example.org/ATMService/insertAccount"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="fault01">
+        <soap:fault name="fault01" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="fault02">
+        <soap:fault name="fault02" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="deleteAccount">
+      <soap:operation soapAction="http://www.example.org/ATMService/deleteAccount"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="queryAccount">
+      <soap:operation soapAction="http://www.example.org/ATMService/queryAccount"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ATMService">
+    <wsdl:port name="ATMServiceSOAP" binding="tns:ATMServiceSOAP">
+      <soap:address location="http://localhost:8080/axis2/services/ATMService/"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

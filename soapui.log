@@ -1,0 +1,14 @@
+2019-05-27 17:43:14,346 WARN  [SoapUI] Missing folder [G:\PROJECT_IDEA\jiglootest\.\ext] for external libraries
+2019-05-27 17:43:14,377 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\Users\daihe\soapui-settings.xml]
+2019-05-27 17:43:15,331 INFO  [SchemaUtils] Loading schema types from [http://localhost:8084/services/acms?wsdl]
+2019-05-27 17:43:15,331 INFO  [SchemaUtils] Getting schema http://localhost:8084/services/acms?wsdl
+2019-05-27 17:43:15,661 INFO  [SchemaUtils] Loading schema types from [http://localhost:8084/services/acms?wsdl]
+2019-05-27 17:43:15,661 INFO  [SchemaUtils] Getting schema http://localhost:8084/services/acms?wsdl
+2019-05-27 17:43:15,786 INFO  [SchemaUtils] Loading schema types from [http://localhost:8084/services/acms?wsdl]
+2019-05-27 17:43:15,786 INFO  [SchemaUtils] Getting schema http://localhost:8084/services/acms?wsdl
+2019-05-27 17:43:15,911 INFO  [SchemaUtils] Loading schema types from [http://localhost:8084/services/acms?wsdl]
+2019-05-27 17:43:15,911 INFO  [SchemaUtils] Getting schema http://localhost:8084/services/acms?wsdl
+2019-05-27 17:43:16,005 INFO  [SchemaUtils] Loading schema types from [http://localhost:8084/services/acms?wsdl]
+2019-05-27 17:43:16,005 INFO  [SchemaUtils] Getting schema http://localhost:8084/services/acms?wsdl
+2019-05-27 17:43:16,083 INFO  [SchemaUtils] Loading schema types from [http://localhost:8084/services/acms?wsdl]
+2019-05-27 17:43:16,083 INFO  [SchemaUtils] Getting schema http://localhost:8084/services/acms?wsdl
